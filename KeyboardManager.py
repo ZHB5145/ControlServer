@@ -1,8 +1,6 @@
-import win32api
-import win32con
+
 import time
-import pyautogui
-import pyperclip
+
 key_map={
     'backspace':0x08,
     'tab':0x09,
@@ -152,22 +150,6 @@ key_map={
     "'":0xDE,
     '`':0xC0
  }
-
-def key_down(key):
-    vk_code = key_map[key]
-    win32api.keybd_event(vk_code, win32api.MapVirtualKey(vk_code, 0), 0, 0)
-
-
-def key_up(key):
-    vk_code = key_map[key]
-    win32api.keybd_event(vk_code, win32api.MapVirtualKey(vk_code, 0), win32con.KEYEVENTF_KEYUP, 0)
-
-
-def key_press(key, sleep_time=0.02):
-    key_down(key)
-    time.sleep(sleep_time)
-    key_up(key)
-
 # time.sleep(3)
 # key_down("alt")
 # key_down("h")

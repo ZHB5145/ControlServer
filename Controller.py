@@ -5,7 +5,6 @@ from service import *
 from ComputerMonitor import ComputerMonitor
 from CommandMessage import CommandMessage;
 import json
-import pyautogui
 from KeyboardManager import *
 import time
 

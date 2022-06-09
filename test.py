@@ -1,4 +1,3 @@
-import pyautogui
 import time
 from KeyboardManager import key_press
 time.sleep(2)
